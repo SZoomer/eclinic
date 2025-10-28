@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta name="viewport" content="with=device-width,  initial-scale=1.0">
+        <title>Blog</title>
+        <link rel="stylesheet" href="blog.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">       
+        
+    </head>
+<body>
+        <section class="header">
+            <nav>
+                <a href="/home"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="/home">HOME</a></li>
+                        <li><a href="/services">SERVICES</a></li>
+                        <li><a href="/appointment">APPOINTMENTS</a></li>
+                        <li><a href="/blog">BLOGS</a></li>
+                        <li><a href="/contact">CONTACTS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+
+        </section>
+        
+        <!-- ---------------- OUR BLOGS ------------------>
+        
+         <section class="cls-blog">
+            <h1>Our Blog</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="row">
+                <div class="cls-blog-col">
+                    <img src="images/f.jpg">
+                    <h3>Dr.Madhan Lama</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eius perspiciatis dignissimos nam quos fugit neque, quia in sequi praesentium, consequatur molestiae. Ipsam nihil modi, totam omnis facere cupiditate tempore?</p>
+                </div>
+
+                <div class="cls-blog-col">
+                    <img src="images/g.jpg">
+                    <h3>Dr.Sumit Adhikari</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eius perspiciatis dignissimos nam quos fugit neque, quia in sequi praesentium, consequatur molestiae. Ipsam nihil modi, totam omnis facere cupiditate tempore?</p>
+                </div>
+
+                <div class="cls-blog-col">
+                    <img src="images/h.jpg">
+                    <h3>Dr.Monika Rai </h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eius perspiciatis dignissimos nam quos fugit neque, quia in sequi praesentium, consequatur molestiae. Ipsam nihil modi, totam omnis facere cupiditate tempore?</p>
+                </div>
+            </div>
+        </section> 
+        
+
+<!-- blogs section ends -->
+        
+        <!---------------------Call To Action---------------------------------->
+
+        <section class="cta">
+            <h1>Contacts us for any problem. We are here to help you out.</h1>
+            <p>Get the Online Appointment for the preferred doctors.<p>
+                <a href="/contact" class="visit-btn">CONTACT US</a>
+
+        </section>
+
+
+       
+       <!----------------------- Footer ----------------------------->
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Fuga, veniam, doloribus autem ut magnam eius alias modi sequi, rem quia iusto expedita quas quam. Sequi amet id modi cupiditate vitae!</p>
+                
+        
+        <!-- footer section starts  -->
+
+    			<div class="box-container">
+
+
+       			<div class="box">
+           		<h3>Quick links</h3>
+            	<a href="/home"> <i class="fa fa-arrow-right"></i> Home </a>
+            	<a href="/services"> <i class="fa fa-arrow-right"></i> Services </a>
+            	<a href="/appointment"> <i class="fa fa-arrow-right"></i> Appointments </a>
+            	<a href="/blog"> <i class="fa fa-arrow-right"></i> Blogs </a>
+            	<a href="/contact"> <i class="fa fa-arrow-right"></i> Contacts </a>
+        		</div>
+        
+        		<div class="box">
+            	<h3>Our locations</h3>
+            	<a href="#"> <i class="fa fa-map-marker-alt"></i> Kathmandu </a>
+        		</div>
+
+        		<div class="box">
+           		<h3>Contact info</h3>
+            	<a href="#"> <i class="fa fa-phone"></i> +97798173xxxxx </a>
+            	<a href="#"> <i class="fa fa-phone"></i> +97798421xxxxx </a>
+            	<a href="#"> <i class="fa fa-envelope"></i> xyz@gmail.com </a>
+        		</div>
+        		
+        
+    			</div>
+    			
+    			<div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin"></i>
+
+                </div>
+                
+    	<p>Made with <i class="fa fa-heart-o"></i> by PP</p>
+    	 <div class="credit"> Created by <span> Prashanta </span> | all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+        
+        
+        <!---------------JavaScript for Toggle Menu ------------------------>
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+
+
+        </script>
+
+</body>
+</html>

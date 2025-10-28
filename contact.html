@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<link rel="stylesheet" href="contact.css">
+<head>
+<meta charset="ISO-8859-1">
+<title>Contact</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<section class="header">
+            <nav>
+                <a href="/home"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="/home">HOME</a></li>
+                        <li><a href="/services">SERVICES</a></li>
+                        <li><a href="/appointment">APPOINTMENTS</a></li>
+                        <li><a href="/blog">BLOGS</a></li>
+                        <li><a href="/contact">CONTACTS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="regform">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="main">
+            <form action="/contact" method="post">
+            
+            <h2 class="uname">Username :</h2>
+                <input class="username" type ="text" name="username" placeholder="Enter your full name.....">
+            
+            <h2 class="ename">Email :</h2>
+                <input class="email" type ="email" name="email" placeholder="Enter your email ID 'abc@example.com'..... ">
+                
+            <h2 class="sublabel">Subject :</h2>
+                <input class="subject" type ="text" name="subject" placeholder="Enter your subject / query......">
+                
+                 <!----submit button  -->
+                    <button type="submit" class="submitBtn"> Submit </button>
+
+                    <button class="cancelBtn" text="reset" >Cancel</button>
+                    <br>
+                    <br>
+            
+            
+            
+            
+             </form>
+            </div>
+            <br>
+           <br>
+      </section>   
+         
+            
+            
+ <!----------------------- Footer ----------------------------->
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                Fuga, veniam, doloribus autem ut magnam eius alias modi sequi, rem quia iusto expedita quas quam. Sequi amet id modi cupiditate vitae!</p>
+                <br>
+                <br>
+        
+        <!-- footer section starts  -->
+
+    			<div class="box-container">
+
+
+       			<div class="box">
+           		<h3>Quick links</h3>
+            	<a href="/home"> <i class="fa fa-arrow-right"></i> Home </a>
+            	<a href="/services"> <i class="fa fa-arrow-right"></i> Services </a>
+            	<a href="/appointment"> <i class="fa fa-arrow-right"></i> Appointments </a>
+            	<a href="/blog"> <i class="fa fa-arrow-right"></i> Blogs </a>
+            	<a href="/contact"> <i class="fa fa-arrow-right"></i> Contacts </a>
+        		</div>
+        
+        		<div class="box">
+            	<h3>Our locations</h3>
+            	<a href="#"> <i class="fa fa-map-marker-alt"></i> Kathmandu </a>
+        		</div>
+
+        		<div class="box">
+           		<h3>Contact info</h3>
+            	<a href="#"> <i class="fa fa-phone"></i> +97798173xxxxx </a>
+            	<a href="#"> <i class="fa fa-phone"></i> +97798421xxxxx </a>
+            	<a href="#"> <i class="fa fa-envelope"></i> xyz@gmail.com </a>
+        		</div>
+        		
+        
+    			</div>
+    			
+    			<div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin" ></i>
+
+                </div>
+                
+    	<p>Made with <i class="fa fa-heart-o"></i> by PP</p>
+    	 <div class="credit"> Created by <span> Prashanta </span> | all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+
+</body>
+</html>
